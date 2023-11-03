@@ -1,10 +1,18 @@
-* {
-	background-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+  background-color: white;
+  font-family: 'Manrope', sans-serif;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32" height="32"><circle cx="8" cy="8" r="7" fill="black"/></svg>') 8 8, auto;
 }
 
+@media screen and (max-width: 768px) {
+	body {
+	  font-size: 9px;
+	}
+  }
+
 h1 {
-	text-transform: uppercase;
-	font-family: "Rampart One", sans-serif;
 	color: black;
 	font-size: 1.5rem;
 }
@@ -18,6 +26,7 @@ h1 {
 
 /* MENU RADIO */
 .menu {
+	width:20%;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -26,6 +35,7 @@ h1 {
 	font-size: 1.8rem;
 	margin-top: 50px;
 }
+
 .response {
 	display: flex;
 	flex-direction: column;
@@ -44,6 +54,40 @@ h1 {
 	padding: 10px 10px;
 	text-align: center;
 	text-decoration: none;
+	animation: glowing 3300ms infinite;
+}
+
+.audioPlayer{
+	margin-top: 0;
+	position: absolute;
+	left: 1%;
+}
+
+.imgDisc {
+	margin-bottom: 60px;
+	transform: translate(-10%, -10%);
+	animation: rotate 5s linear infinite;
+	margin-right: 50px;
+	width: 50%;
+}
+
+/* #text {
+	font-size: 1rem;
+	text-align: center;
+	margin-top: 30px;
+} */
+
+@keyframes rotate {
+	0% {
+		transition: left 1s, transform 1s;
+		transform: translateX(0%);
+		transform: translate(50%) rotateZ(0deg);
+	}
+	100% {
+		transition: left 1s, transform 1s;
+		transform: translateX(50%);
+		transform: translate(50%) rotateZ(360deg);
+	}
 }
 
 @keyframes glowing {
@@ -58,36 +102,5 @@ h1 {
 	100% {
 		background-color: white;
 		box-shadow: 0 0 5px #ccc9ca;
-	}
-}
-#button {
-	animation: glowing 1300ms infinite;
-}
-
-/* VINYL */
-.img_vinyl {
-	margin-bottom: 60px;
-	transform: translate(-10%, -10%);
-	animation: rotate 3s linear infinite;
-	margin-right: 50px;
-	width: 50%;
-}
-
-#text {
-	font-size: 1rem;
-	text-align: center;
-	margin-top: 30px;
-}
-
-@keyframes rotate {
-	0% {
-		transition: left 1s, transform 1s;
-		transform: translateX(0%);
-		transform: translate(50%) rotateZ(0deg);
-	}
-	100% {
-		transition: left 1s, transform 1s;
-		transform: translateX(50%);
-		transform: translate(50%) rotateZ(360deg);
 	}
 }

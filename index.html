@@ -10,34 +10,33 @@
     <div class="board">
 
       <div class="menu">
-    
-        <h1>Choose a disc to listen to </h1>
-    
-        <div>
-          <input type="radio" id="ballad" name="gender" value="1">
-          <label for="Ballad"> 1</label>
-        </div>
-    
-        <div>
-          <input type="radio" id="Pop" name="gender" value="2">
-          <label for="Pop">2</label>
-        </div>
-    
-        <div>
-          <input type="radio" id="RB" name="gender" value="3">
-          <label for="Rb">3</label>
-        </div>
-    
+        <h1>Select a disc to listen to: </h1>
+        
+        <select id="discSelect" onchange="updateDisc()">
+          <option value="1.png">Disc 1</option>
+          <option value="2.png">Disc 2</option>
+          <option value="3.png">Disc 3</option>
+          <!-- Add more options as needed -->
+        </select>
+      
         <div class="response">
-          <button id="button" onclick="MusicTaste()"> play </button>
-          <span id="text"></span>
+          <button id="button">Play</button>
+          <!-- <span id="text">haha</span> -->
         </div>
       </div>
-    
-      <div id="vinyl">
-        <img class="img_vinyl" src="images/1.png" alt="vinyl" />
+
+      <div class="audioPlayer">
+        <audio id="discAudio" controls>
+          <source src="images/1.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
       </div>
-      <!-- <div id="cercle"></div> -->
+    
+      <div id="disc">
+        <img class="imgDisc" id="vinylImage" src="images/1.png" alt="Disc Image" />
+      </div>
+  
+  
+      <script src="main.js"></script>
     </body>
-  <script src="main.js"></script>
 </html>
