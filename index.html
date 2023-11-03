@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>microsites</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="board">
+
+      <div class="menu">
+    
+        <h1>Choose a disc to listen to </h1>
+    
+        <div>
+          <input type="radio" id="ballad" name="gender" value="1">
+          <label for="Ballad"> 1</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="Pop" name="gender" value="2">
+          <label for="Pop">2</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="RB" name="gender" value="3">
+          <label for="Rb">3</label>
+        </div>
+    
+        <div class="response">
+          <button id="button" onclick="MusicTaste()"> play </button>
+          <span id="text"></span>
+        </div>
+      </div>
+    
+      <div id="vinyl">
+        <img class="img_vinyl" src="images/1.png" alt="vinyl" />
+      </div>
+      <!-- <div id="cercle"></div> -->
+    </body>
+  <script src="main.js"></script>
+</html>
