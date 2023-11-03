@@ -14,6 +14,6 @@ function MusicTaste() {
 
 	// show the output:
 	text.innerHTML = selectedMusic
-		? `You selected disc ${selectedMusic}`
+		? `Currently playing: disc ${selectedMusic}`
 		: `You haven't selected any disc`;
 }

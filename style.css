@@ -31,16 +31,6 @@ h1 {
 	flex-direction: column;
 }
 
-/* #cercle {
-	position: relative;
-	right: 26vw;
-	bottom: 27px;
-	width: 150px;
-	height: 150px;
-	border-radius: 90px;
-	background-color: white;
-} */
-
 #button {
 	background-color: black;
 	margin-top: 30px;
